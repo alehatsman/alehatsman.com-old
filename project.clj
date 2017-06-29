@@ -6,12 +6,13 @@
             [lein-garden "0.3.0"]]
   :cljsbuild {:builds {:dev {:source-paths ["src/cljs"]
                              :compiler {:output-to "dist/js/main.js"
-                                        :optimizations :whitespace
+                                        :optimizations :simple
                                         :foreign-libs [{:file "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/clojure.min.js"
-                                                        :provides ["highlight.clojure"]
-                                                        :requires ["highlight"]}
+                                                        :provides ["hljs.clojure"]
+                                                        :requires ["hljs"]}
                                                        {:file "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
-                                                        :provides ["highlight"]}]}}}
+                                                        :externals ["src/js/highlight.js"]
+                                                        :provides ["hljs"]}]}}}
 
                        :prod {:source-paths ["src/cljs"]
                               :compiler {:output-to "dist/js/main.js"

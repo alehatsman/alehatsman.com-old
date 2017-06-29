@@ -1,5 +1,6 @@
 (ns alehatsman.code
-  (:require [highlight.clojure]
+  (:require [hljs.clojure]
+            [hljs :as hljs]
             [alehatsman.dom :as dom]))
 
 (def my-info (str 
@@ -15,4 +16,4 @@
 (defn code [el]
   "code component renders html to provided element"
   (set! (.-innerHTML el) my-info)
-  (js/hljs.highlightBlock (dom/query-selector "code")))
+  (hljs/highlightBlock (dom/query-selector "code")))
