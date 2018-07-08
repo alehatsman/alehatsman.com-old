@@ -9,9 +9,8 @@
                "                  :status <a href=\"/files/Resume.ClojureWebDeveloper.aleh.atsman@gmail.com.pdf\" target=\"blank\">\"Looking for Clojure job\"</a>\n"
                "                  :skills [\"Clojure\" \"JavaScript\"]\n"
                "                  :github <a href=\"https://github.com/atsman\" target=\"blank\">\"https://github.com/atsman\"</a>\n"
-               "                  :blog <a href=\"https://t.me/coding_around\" target=\"blank\">https://t.me/coding_around</a>"
+               "                  :blog <a href=\"https://t.me/coding_around\" target=\"blank\">\"https://t.me/coding_around\"</a>\n"
                "                  :email <a href=\"mailto:aleh.atsman@gmail.com\" target=\"blank\">\"aleh.atsman@gmail.com\"</a>\n"
-               "                  :skype <a href=\"skype:oleg.atsman?userinfo\" target=\"blank\">\"oleg.atsman\"</a>})\n"
                "<code>"))
 
 (defn code [el]
